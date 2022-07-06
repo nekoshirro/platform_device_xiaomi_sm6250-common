@@ -230,6 +230,3 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit proprietary blobs
 -include vendor/xiaomi/sm6250-common/BoardConfigVendor.mk
-
-# Inherit ANXCamera blobs
--include vendor/ANXCamera/BoardConfigAnx.mk
