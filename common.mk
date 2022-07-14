@@ -271,7 +271,15 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.gatekeeper@1.0.vendor
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.metadata.method=dm-default-key \
+    ro.crypto.volume.filenames_mode=aes-256-cts \
+    ro.crypto.volume.options=::v2 \
+    ro.hardware.keystore_desede=true
 
 # Light
 PRODUCT_PACKAGES += \
