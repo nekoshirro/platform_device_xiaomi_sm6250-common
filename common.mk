@@ -347,6 +347,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sm6250
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
